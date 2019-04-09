@@ -1,0 +1,624 @@
+/* --------  Fontes ----------- */
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('../fonts/Lato/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../fonts/Lato/Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-LightItalic';
+  src: url('../fonts/Lato/Lato-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Im-Fell-In-French-Canon-Roman';
+  src: url('../fonts/IM_Fell_French_Canon/IMFeFCrm28P.ttf') format('truetype');
+}
+
+/*          */
+
+
+
+
+
+
+/* ------   Media Querys   ------- */
+
+/* Phones   -  XS */
+@media only screen and (max-width: 767px) {
+    .profilepic{
+        margin-left: 45%;
+    }
+
+    .title{
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .description{
+      font-size: 1em;
+      text-align: center;
+    }
+
+    .info{
+      font-size: 0.47em;
+      margin-left: 30px;
+    }
+
+    .share{
+      display: none;
+    }
+
+    .content{
+      font-size: 0.9em;
+      margin-left: 7em;
+    }
+
+    .asp{
+      font-size: 3em;
+    }
+
+    .phrase{
+      font-size: 1.2em;
+
+      margin-bottom: 1em;
+    }
+
+    .content-l{
+      font-size: 0.8em;
+      margin-left: 8em;
+    }
+
+    .img-default{
+      margin-left: 2em;
+    }
+
+    .title-final{
+      font-size: 0.9em;
+    }
+
+    .info-clap{
+      margin-left: 35%;
+    }
+
+    .info-profilepic{
+        margin-left: 6em;
+    }
+
+    .retancle-article{
+      width: 100%;
+      height: 250px;
+    }
+
+    .article-profile{
+      margin-left: 48%;
+    }
+
+    .article-txt{
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+    .article-info{
+      margin-left: 30%;
+    }
+
+
+}
+
+/* Tablets   -  SM */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .profilepic{
+        margin-left: 3em;
+    }
+
+    .title{
+        font-size: 2em;
+
+    }
+
+    .description{
+      margin-left: 5em;
+    }
+
+    .info{
+      font-size: 0.6em;
+    }
+
+    .share{
+      display: none;
+    }
+
+    .content{
+      margin-left: 11em;
+    }
+
+
+    .asp{
+      font-size: 4em;
+    }
+
+    .phrase{
+      font-size: 1.4em;
+      margin-left: 10%;
+      margin-bottom: 1em;
+    }
+
+    .content-l{
+      font-size: 1em;
+      margin-left: 11em;
+    }
+
+    .title-final{
+      font-size: 1em;
+    }
+
+    .info-clap{
+      margin-left: 30px;
+    }
+
+
+    .info-profilepic{
+        margin-left: 5%;
+    }
+
+    .article-profile{
+      margin-left: 40%;
+    }
+
+    .retancle-article{
+      width: 220px;
+      height: 280px;
+    }
+
+    .article-space2{
+      margin-left: 8em;
+    }
+
+
+}
+
+
+
+/* Desktops - Telas Médias  -  MD */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .profilepic{
+        margin-left: 3em;
+    }
+
+    .title{
+        font-size: 2em;
+        margin-left: 3em;
+    }
+
+    .description{
+      margin-left: 0.5em;
+    }
+
+    .info{
+      font-size: 0.6em;
+    }
+
+    .content{
+      font-size: 1em;
+      margin-left: 8em;
+    }
+
+    .asp{
+      font-size: 4em;
+    }
+
+    .phrase{
+      font-size: 1.5em;
+      margin-left: 4em;
+      margin-bottom: 1em;
+    }
+
+    .content-l{
+      margin-left: 8em;
+    }
+
+    .title-final{
+      font-size: 1.1em;
+    }
+
+    .info-clap{
+      margin-left: 30px;
+    }
+
+
+    .info-profilepic{
+        margin-left: 10%;
+    }
+
+    .article-profile{
+      margin-left: 40%;
+    }
+
+    .retancle-article{
+      width: 220px;
+      height: 280px;
+    }
+
+    .article-space2{
+      margin-left: 8em;
+    }
+
+
+}
+
+/* Desktops - Telas Grandes  - LG  */
+@media only screen and (min-width: 1200px){
+    .profilepic{
+        margin-left: 3em;
+    }
+
+    .title{
+        font-size: 3em;
+    }
+
+    .description{
+      font-size: 1.3em;
+      margin-left: 3em;
+    }
+
+    .info{
+      font-size: 0.6em;
+    }
+
+    .content{
+      font-size: 1.2em;
+      margin-left: 8em;
+    }
+
+
+
+    .asp{
+      font-size: 5em;
+    }
+
+    .phrase{
+      font-size: 1.7em;
+      margin-left: 3em;
+      margin-bottom: 1em;
+    }
+
+    .content-l{
+      margin-left: 10em;
+    }
+
+    .title-final{
+      font-size: 1.2em;
+    }
+
+    .info-clap{
+      margin-left: 30px;
+    }
+
+
+    .info-profilepic{
+        margin-left: 20%;
+    }
+
+    .article-profile{
+      margin-left: 40%;
+    }
+
+    .retancle-article{
+      width: 280px;
+      height: 280px;
+    }
+
+    .article-space{
+      margin-left: 1em;
+    }
+}
+
+/*                */
+
+
+a:link
+{
+text-decoration:none;
+}
+
+li {
+    list-style-type:none;
+}
+
+.profilepic{
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.title{
+  font-family: 'Lato';
+  color: #2e3849;
+}
+
+.description{
+  font-family: 'Lato-Light';
+  color: #8892a4;
+  margin-bottom: 4em;
+}
+
+.info{
+  font-family: 'Lato-Black';
+  color: #566379;
+}
+
+.info-orange{
+  color: #ff9932;
+}
+
+.space1{
+  margin-left: 4px;
+}
+
+.space2{
+  margin-left: 30px;
+}
+
+.share{
+  margin-left: 4em;
+
+}
+
+.affix {
+    top: 15em;
+    z-index: 9999 !important;
+}
+
+ul {
+
+list-style-type: none;
+
+}
+
+
+.iconclap{
+  width: 2em;
+}
+
+.space3{
+  margin-left: 7px;
+}
+
+.icondefault{
+  width: 1.3em;
+  margin-left: 2px;
+}
+
+.iconfacebook{
+  width: 0.8em;
+  margin-left: 5px;
+}
+
+
+
+.content-text{
+    font-family: Lato-Light;
+    color: #566379;
+}
+
+
+.asp{
+  font-family: Im-Fell-In-French-Canon-Roman;
+  color: #ff9932;
+
+}
+
+.phrase{
+  font-family: Lato-LightItalic;
+  color: #566379;
+  text-align: center;
+}
+
+.content-number{
+  font-family: Lato;
+  color: #ff9932;
+}
+
+.content-list{
+  font-family: Lato;
+  color: #566379;
+}
+
+.roman-kraft{
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: bottom;
+  margin-bottom: 1em;
+}
+
+.img-default{
+  object-fit: cover;
+  width: 90%;
+  height: 300px;
+  border-radius: 20px;
+  margin-bottom: 2em;
+
+}
+
+.img-title-align{
+  text-align:center;
+}
+
+.img-title{
+  font-family: Lato-Bold;
+  color: #b9c1d0;
+  font-size: 13px;
+
+}
+
+.img-subtitle{
+  font-family: Lato;
+  color: #b9c1d0;
+  font-size: 12px;
+  margin-bottom: 3em;
+}
+
+.aint-oupt{
+  font-family: Lato;
+  color: #566379;
+  font-size: 2em;
+}
+
+.link-simulation{
+  font-family: Lato;
+  color: #ff9932;
+}
+
+.title-final{
+  font-family: 'Lato';
+  color: #2e3849;
+  letter-spacing: 1.5px;
+  margin-top: 5em;
+}
+
+.subtitle-final{
+  font-family: 'Lato-Light';
+  color: #566379;
+  font-size: 1em;
+}
+
+.info-final{
+  font-family: Lato-Black;
+  font-size: 0.6em;
+  color: #566379;
+}
+
+
+.info-clap{
+  width: 2.5em;
+}
+
+.info-profilepic{
+  width: 4em;
+  height: 4em;
+  border-radius: 100%;
+  margin-bottom: 2em;
+}
+
+.tags{
+
+  font-family: Lato-Black;
+  font-size: 0.6em;
+  color: #566379;
+  margin-right: 10px;
+
+}
+
+
+.retancle{
+  width: 40px;
+  height: 18px;
+  border-radius: 13px;
+  border: solid 1px #ff9932;
+  font-size: 0.7em;
+  text-align: center;
+  padding: 3px 10px 3px 10px;
+  margin-right: 7px;
+  margin-bottom: 2em;
+  display: inline;
+
+}
+
+.txt-retancle{
+  font-family: Lato;
+  color: #ff9932;
+
+}
+
+.share-final{
+  width: 18px;
+  margin-left: 10px;
+}
+
+.share-final-facebook{
+  width: 10px;
+  margin-left: 10px;
+}
+
+.share-final-iconclap{
+  width: 2em;
+  margin-left: 4em;
+}
+
+.footer-background{
+  width: 100%;
+  background-color: #f7f7f8;
+}
+
+.leiatambem{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-family: Lato;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #566379;
+  font-size: 2em;
+}
+
+.retancle-article{
+ margin-right: 2em;
+ background-color: #ffffff;
+ margin-bottom: 5em;
+}
+
+.articles{
+
+}
+
+
+.article-profile{
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  margin-top: 10%;
+}
+
+
+.article-title{
+  font-family: 'Lato';
+  color: #2e3849;
+  letter-spacing: 1.5px;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.article-txt{
+  font-family: 'Lato-Light';
+  color: #566379;
+  text-align: center;
+}
+
+.article-info{
+  font-family: Lato-Black;
+  font-size: 0.6em;
+  color: #566379;
+}
+
+.article-space1{
+  margin-left: 2em;
+}
