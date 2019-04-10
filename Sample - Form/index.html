@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="libs/vuelidate.min.js"></script>
+  <script src="libs/validators.min.js"></script>
+  <script src="libs/vue.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Teste Prático</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="header">
+    <h3>Teste Prático</g>
+  </div>
+
+  <div id="app">
+    <form @submit.prevent="submitForm" autocomplete="off">
+
+      <div class="form-group">
+        <label for="name" class="font-style">Nome</label>
+        <input type="text" v-model="$v.name.$model" :class="status($v.name)">
+        <div class="input-error" v-if="!$v.name.required">Nome é obrigatório</div>
+        <div class="input-error" v-if="!$v.name.minLength">Nome deve ter {{$v.name.$params.minLength.min}} caracteres.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="tel" class="font-style">Telefone</label>
+        <input type="text" v-model="$v.tel.$model" :class="status($v.tel)">
+        <div class="input-error" v-if="!$v.tel.required">Telefone obrigatório.</div>
+        <div class="input-error" v-if="!$v.tel.numeric">Telefone invalido.</div>
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="font-style">E-mail</label>
+        <input type="text" v-model="$v.email.$model" :class="status($v.email)">
+        <div class="input-error" v-if="!$v.email.required">Email é obrigatório</div>
+        <div class="input-error" v-if="!$v.email.email">E-mail inválido.</div>
+      </div>
+
+      <button @click="replace" type="submit" class="btn btn-success btn-block"
+        :disabled="$v.name.$invalid || $v.tel.$invalid || $v.email.$invalid">
+        Salvar dados
+      </button>
+
+      <hr />
+      <p class="font-style">Nome: {{showName}}</p>
+      <p class="font-style">Telefone: {{showTel}}</p>
+      <p class="font-style">E-mail: {{showEmail}}</p>
+
+    </form>
+
+</body>
+
+<!-- Validation JS -->
+<script src="validation.js"></script>
+<!-- Bootstrap JS -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</html>
